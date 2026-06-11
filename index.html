@@ -33,7 +33,21 @@
     <section id="consultation" class="py-16 bg-sukuLight">
         <div class="max-w-md mx-auto px-4">
             <div class="bg-white border border-gray-200 p-6 rounded-xl shadow-sm">
-                <form class="space-y-4">
+                <form <form action="https://api.web3forms.com/submit" method="POST" class="space-y-4">
+    <input type="hidden" name="access_key" value="YOUR_ACCESS_TOKEN_HERE">
+    
+    <input type="hidden" name="redirect" value="https://web3forms.com/success">
+
+    <div>
+        <label class="block text-xs font-bold uppercase text-gray-500 mb-1">Business Name</label>
+        <input type="text" name="Business Name" placeholder="Company Name" class="w-full bg-sukuLight border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none" required>
+    </div>
+    <div>
+        <label class="block text-xs font-bold uppercase text-gray-500 mb-1">Business Email</label>
+        <input type="email" name="Email" placeholder="name@company.com" class="w-full bg-sukuLight border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none" required>
+    </div>
+    <button type="submit" class="w-full py-3 bg-sukuDark hover:bg-sukuGreen text-white font-bold rounded-lg text-sm transition">Request Strategy Blueprint</button>
+</form> 14d92b86-4ff5-4ec2-b3a9-6e54f3243fa4
                     <div>
                         <label class="block text-xs font-bold uppercase text-gray-500 mb-1">Business Name</label>
                         <input type="text" placeholder="Company Name" class="w-full bg-sukuLight border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none" required>
