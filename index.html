@@ -8,59 +8,76 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script>
         tailwind.config = {
-            theme: { extend: { colors: { sukuDark: '#111827', sukuLight: '#F9FAFB', sukuGreen: '#059669' } } }
+            theme: {
+                extend: {
+                    colors: {
+                        sukuDark: '#0B0F19',
+                        sukuLight: '#F9FAFB',
+                        sukuGreen: '#059669',
+                    }
+                }
+            }
         }
     </script>
 </head>
-<body class="bg-sukuLight text-sukuDark font-sans antialiased">
-    <header class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
-        <div class="max-w-6xl mx-auto px-4 h-20 flex items-center justify-between">
+<body class="bg-sukuDark text-gray-100 font-sans antialiased">
+
+    <header class="fixed top-0 w-full z-50 bg-sukuDark/90 backdrop-blur-md border-b border-gray-800">
+        <div class="max-w-4xl mx-auto px-4 h-20 flex items-center justify-between">
             <div class="flex items-center space-x-2">
                 <div class="w-8 h-8 rounded-lg bg-sukuGreen flex items-center justify-center text-white font-bold">S</div>
-                <span class="text-lg font-bold tracking-wider">SUKU<span class="text-sukuGreen">DIGITAL</span></span>
+                <span class="text-lg font-bold tracking-wider text-white">SUKU<span class="text-sukuGreen">DIGITAL</span></span>
             </div>
-            <a href="#consultation" class="bg-sukuDark hover:bg-gray-800 text-white px-4 py-2 rounded-lg text-sm transition">Get Started</a>
+            <a href="#consultation" class="bg-sukuGreen hover:bg-emerald-600 text-white px-4 py-2 rounded-lg text-sm font-semibold transition">Get Started</a>
         </div>
     </header>
-    <section class="pt-36 pb-20 bg-white text-center">
-        <div class="max-w-3xl mx-auto px-4">
-            <p class="text-xs font-bold uppercase tracking-widest text-sukuGreen mb-3">High-Intent Paid Acquisition</p>
-            <h1 class="text-4xl md:text-5xl font-black tracking-tight text-sukuDark leading-tight">We engineer digital ad systems that dominate marketplaces.</h1>
-            <p class="mt-6 text-gray-500 max-w-xl mx-auto">We design, fund, and scale high-performance Google and Meta campaigns that deliver pre-qualified prospects directly to your sales pipeline.</p>
-            <div class="mt-8"><a href="#consultation" class="px-6 py-3.5 bg-sukuGreen hover:bg-sukuDark text-white font-semibold rounded-lg transition">Secure a Blueprint Call</a></div>
-        </div>
-    </section>
-    <section id="consultation" class="py-16 bg-sukuLight">
-        <div class="max-w-md mx-auto px-4">
-            <div class="bg-white border border-gray-200 p-6 rounded-xl shadow-sm">
-                <form <form action="https://api.web3forms.com/submit" method="POST" class="space-y-4">
-    <input type="hidden" name="access_key" value="YOUR_ACCESS_TOKEN_HERE">
-    
-    <input type="hidden" name="redirect" value="https://web3forms.com/success">
 
-    <div>
-        <label class="block text-xs font-bold uppercase text-gray-500 mb-1">Business Name</label>
-        <input type="text" name="Business Name" placeholder="Company Name" class="w-full bg-sukuLight border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none" required>
-    </div>
-    <div>
-        <label class="block text-xs font-bold uppercase text-gray-500 mb-1">Business Email</label>
-        <input type="email" name="Email" placeholder="name@company.com" class="w-full bg-sukuLight border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none" required>
-    </div>
-    <button type="submit" class="w-full py-3 bg-sukuDark hover:bg-sukuGreen text-white font-bold rounded-lg text-sm transition">Request Strategy Blueprint</button>
-</form> 14d92b86-4ff5-4ec2-b3a9-6e54f3243fa4
-                    <div>
-                        <label class="block text-xs font-bold uppercase text-gray-500 mb-1">Business Name</label>
-                        <input type="text" placeholder="Company Name" class="w-full bg-sukuLight border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none" required>
-                    </div>
-                    <div>
-                        <label class="block text-xs font-bold uppercase text-gray-500 mb-1">Business Email</label>
-                        <input type="email" placeholder="name@company.com" class="w-full bg-sukuLight border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none" required>
-                    </div>
-                    <button type="submit" class="w-full py-3 bg-sukuDark hover:bg-sukuGreen text-white font-bold rounded-lg text-sm transition">Request Strategy Blueprint</button>
-                </form>
+    <section class="pt-36 pb-16 text-center relative overflow-hidden">
+        <div class="max-w-3xl mx-auto px-4 relative z-10">
+            <p class="text-xs font-bold uppercase tracking-widest text-sukuGreen mb-3">High-Intent Paid Acquisition</p>
+            <h1 class="text-4xl md:text-5xl font-black tracking-tight text-white leading-tight">
+                We engineer digital ad systems that dominate marketplaces.
+            </h1>
+            <p class="mt-6 text-gray-400 max-w-xl mx-auto text-sm md:text-base">
+                We design, fund, and scale high-performance Google and Meta campaigns that deliver pre-qualified prospects directly to your sales pipeline.
+            </p>
+            <div class="mt-8">
+                <a href="#consultation" class="inline-block px-6 py-3.5 bg-sukuGreen hover:bg-emerald-600 text-white font-semibold rounded-lg transition shadow-lg shadow-emerald-500/20">
+                    Secure a Blueprint Call
+                </a>
             </div>
         </div>
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[350px] h-[350px] bg-sukuGreen/10 rounded-full blur-[80px] pointer-events-none"></div>
     </section>
-    <footer class="py-6 bg-white text-center text-xs text-gray-400 border-t">&copy; 2026 SukuDigital. All rights reserved.</footer>
+
+    <section id="consultation" class="py-12 bg-gray-900/40 border-t border-gray-800">
+        <div class="max-w-md mx-auto px-4">
+            <div class="bg-gray-900 border border-gray-800 p-6 rounded-xl shadow-2xl">
+                
+                <form action="https://api.web3forms.com/submit" method="POST" class="space-y-4">
+                    
+                    <input type="hidden" name="access_key" value="14d92b86-4ff5-4ec2-b3a9-6e54f3243fa4">
+                    <input type="hidden" name="redirect" value="https://web3forms.com/success">
+
+                    <div>
+                        <label class="block text-xs font-bold uppercase text-gray-400 mb-1 tracking-wider">Business Name</label>
+                        <input type="text" name="Business Name" placeholder="Company Name" class="w-full bg-sukuDark border border-gray-700 rounded-lg px-3 py-2.5 text-sm text-white focus:outline-none focus:border-sukuGreen transition" required>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold uppercase text-gray-400 mb-1 tracking-wider">Business Email</label>
+                        <input type="email" name="Email" placeholder="name@company.com" class="w-full bg-sukuDark border border-gray-700 rounded-lg px-3 py-2.5 text-sm text-white focus:outline-none focus:border-sukuGreen transition" required>
+                    </div>
+                    <button type="submit" class="w-full py-3.5 bg-sukuGreen hover:bg-emerald-600 text-white font-bold rounded-lg text-sm transition shadow-md mt-2">
+                        Request Strategy Blueprint
+                    </button>
+                </form>
+                </div>
+        </div>
+    </section>
+
+    <footer class="py-6 text-center text-xs text-gray-600 border-t border-gray-900 bg-sukuDark">
+        <p>&copy; 2026 SukuDigital. All rights reserved.</p>
+    </footer>
+
 </body>
 </html>
